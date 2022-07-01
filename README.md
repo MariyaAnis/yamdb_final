@@ -3,7 +3,7 @@
 api_yamdb - групповой учебный проект 10-го спринта курса backend-разработки
 Яндекс.Практикума
 
-![example workflow](https://github.com/MariyaAnis/yamdb_final/actions/workflows/yamdb_workflow.ymlbadge.svg)
+![workflow](https://github.com/MariyaAnis/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ### Как запустить проект:
 
