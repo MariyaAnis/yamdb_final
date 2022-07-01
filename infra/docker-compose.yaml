@@ -13,7 +13,7 @@ services:
       - ./.env
   web:
     image: anismary/yamdb_final
-    build: ../api_yamdb/
+    build: ../
     restart: always
     volumes:
       - static_value:/app/static/
