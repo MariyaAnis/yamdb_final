@@ -65,7 +65,9 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
+          stack_file_name: docker-compose.yaml
           script: |
+            sudo docker pull anismary/api_yamdb:latest
             sudo docker-compose stop
             sudo docker-compose rm web
             touch .env
