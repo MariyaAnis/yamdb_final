@@ -1,5 +1,5 @@
 
-name: yamdb_final
+name: api_yamdb
 
 on: [push]
 
@@ -67,7 +67,7 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             sudo docker pull anismary/api_yamdb
-            sudo docker-compose stop $(sudo docker ps -a -q)
+            sudo docker-compose stop
             sudo docker-compose rm web
             touch .env
             echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
