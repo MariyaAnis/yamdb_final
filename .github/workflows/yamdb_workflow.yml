@@ -67,8 +67,8 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           stack_file_name: docker-compose.yaml
           script: |
-            sudo docker pull anismary/api_yamdb:latest
-            sudo docker-compose stop
+            sudo docker pull anismary/api_yamdb
+            sudo docker-compose stop $(sudo docker ps -a -q)
             sudo docker-compose rm web
             touch .env
             echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
