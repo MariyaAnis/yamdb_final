@@ -1,7 +1,10 @@
 
 name: api_yamdb
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   tests:
