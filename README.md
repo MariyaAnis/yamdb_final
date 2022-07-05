@@ -40,5 +40,17 @@ $ docker-compose exec web python manage.py createsuperuser
 Примеры обращений к эндпоинтам находятся по адресу:
 
 ```
-http://127.0.0.1:8000/redoc/
+http://130.193.55.126/redoc/
+```
+
+Доступ к API:
+
+```
+http://130.193.55.126/api/v1/
+```
+
+Доступ к админке:
+
+```
+http://130.193.55.126/admin/
 ```
